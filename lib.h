@@ -2,11 +2,11 @@
 #define _PKTLIB_LIB_H_INCLUDED_
 
 struct _pktif_base { /* インターフェースの共通領域 */
-  struct _pktif_base *next;
-  int fd;
-  unsigned long flags;
-  int buffer_size;
-  void *option; /* オプション領域 */
+	struct _pktif_base *next;
+	int fd;
+	unsigned long flags;
+	int buffer_size;
+	void *option; /* オプション領域 */
 };
 
 typedef struct _pktif_base *pktif_base_t;
